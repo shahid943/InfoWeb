@@ -5,42 +5,27 @@
   height: auto;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-  cursor: pointer;
-  background-color: black;
-  height: 9vh;
-}
-
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  list-style: none;
-  padding: 26px 30px;
-}
-
 .nav-list ul {
   font-size: 18pt;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-list li {
-  list-style: none;
+  float: left;
 }
 
 .nav-list li a {
-  margin-right: 52px;
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -49,33 +34,8 @@
   text-decoration: none;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky+.content {
-  padding-top: 60px;
-}
-
-#logo img {
-  margin-right: 41px;
-  border: 3px solid;
-  border-color: white;
-  border-radius: 50px;
-  width: 30px;
-  height: 30px;
-}
-
 #News {
   border: 1px solid black;
-  height: 205vh;
-  width: 205vh;
-  background: url(bird.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: dodgerblue;
 }
 
 #News ul {
@@ -110,6 +70,12 @@
   background-size: cover;
   width: 205vh;
   height: 55vh;
+}
+
+#bird img {
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
 }
 
 footer {
