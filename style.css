@@ -5,6 +5,10 @@
   height: auto;
 }
 
+body {
+  background-color: lightseagreen;
+}
+
 .nav-list ul {
   font-size: 18pt;
   list-style-type: none;
@@ -72,15 +76,28 @@
   height: 55vh;
 }
 
-#bird img {
-  margin: 0;
+.space {
+  height: 5px;
   width: 100%;
-  border: 1px solid black;
+}
+
+#section2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+}
+
+#bird img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
 }
 
 footer {
-  color: white;
-  background-color: black;
   text-align: center;
-  height: 10vh;
+  padding: 3px;
+  background-color: black;
+  color: white;
 }
