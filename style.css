@@ -66,6 +66,8 @@ body {
 }
 
 .banner img {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -80,14 +82,20 @@ body {
   height: 5px;
   width: 100%;
 }
-
+#section2 {
+  margin: 0;
+  padding: 0;
+}
 #section2 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: 3px solid white;
 }
-
+#bird {
+  margin: 0;
+  padding: 0;
+}
 #bird img {
   display: block;
   margin-left: auto;
