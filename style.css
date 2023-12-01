@@ -10,7 +10,7 @@ body {
 }
 
 .nav-list ul {
-  font-size: 18pt;
+  font-size: 2vmax;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ body {
 }
 
 #News ul {
-  font-size: 18pt;
+  font-size: 2vmax;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -62,7 +62,7 @@ body {
 }
 
 #News li a:hover {
-  color: dodgerblue;
+  color: white;
 }
 
 .banner img {
@@ -72,7 +72,7 @@ body {
   border: 1px solid black;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 205vh;
+  width: 100%;
   height: 55vh;
 }
 
