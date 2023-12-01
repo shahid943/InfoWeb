@@ -38,21 +38,21 @@ body {
   text-decoration: none;
 }
 
-#News {
-  border: 1px solid black;
-}
-
 #News ul {
   font-size: 2vmax;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   justify-items: center;
   flex-direction: row;
   gap: 45px;
+  width: 100%
 }
 
 #News li {
-  list-style: none;
+  float: left
 }
 
 #News li a {
