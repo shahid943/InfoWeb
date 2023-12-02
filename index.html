@@ -9,23 +9,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul class="nav-list">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
-        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-        <li><a href="https://www.yahoo.com/" target="_blank">Yahoo</a></li>
-      </ul>
-  </nav>
+
+  <div class="navbar">
+    <a href="https://shahid943.github.io/InfoWeb/">Home</a>
+    <a href="#News">News</a>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Links
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.yahoo.com/" target="_blank">Yahoo</a>
+      </div>
+    </div>
+  </div>
+
   <section>
     <div class="banner">
 
@@ -46,17 +53,30 @@
       <li><a href="https://www.ndtv.com/" target="_blank">NDTV</a></li>
     </ul>
   </div>
-  <div class="earth"><img src="earth.jpg" class="img-fluid" alt="earth" style="width:50%;height:50%;">
+  <div class="earth"><img src="earth.jpg" class="img-fluid" alt="earth" style="width:30%;height:30%;">
   </div>
   <div class="space">
 
   </div>
-  <div id="bird"><img src="bird.webp" class="img-fluid" alt="bird" style="width:50%;height:50%;">
+  <div id="bird"><img src="bird.webp" class="img-fluid" alt="bird" style="width:30%;height:1%;">
   </div>
   <footer>
     <p>© All rights reserved</p>
   </footer>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
 
+    window.onclick = function (e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
